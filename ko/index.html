@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="강력하고 안전한 비밀번호를 즉시 생성하세요. 원클릭으로 고유한 비밀번호를 만들 수 있는 무료 온라인 랜덤 비밀번호 생성기입니다. 회원가입 필요 없음.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://passwords-generator.github.io/ko/">
+    <title>온라인 비밀번호 생성기 - 강력하고 안전한 랜덤 비밀번호 생성</title>
+    
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="온라인 비밀번호 생성기 - 강력하고 안전한 랜덤 비밀번호 생성">
+    <meta property="og:description" content="강력하고 안전한 비밀번호를 즉시 생성하세요. 원클릭으로 고유한 비밀번호를 만들 수 있는 무료 온라인 랜덤 비밀번호 생성기입니다. 회원가입 필요 없음.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://passwords-generator.github.io/ko/">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="alternate" hreflang="ru" href="https://passwords-generator.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://passwords-generator.github.io/en/" />
+    <link rel="alternate" hreflang="de" href="https://passwords-generator.github.io/de/" />
+    <link rel="alternate" hreflang="fr" href="https://passwords-generator.github.io/fr/" />
+    <link rel="alternate" hreflang="es" href="https://passwords-generator.github.io/es/" />
+    <link rel="alternate" hreflang="ko" href="https://passwords-generator.github.io/ko/" />
+    <link rel="alternate" hreflang="pt" href="https://passwords-generator.github.io/pt/" />
+    <link rel="alternate" hreflang="x-default" href="https://passwords-generator.github.io/" />
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SecurePass",
+      "description": "강력하고 안전한 비밀번호를 즉시 생성하세요. 원클릭으로 고유한 비밀번호를 만들 수 있는 무료 온라인 랜덤 비밀번호 생성기입니다. 회원가입 필요 없음.",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+	<script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "비밀번호 생성기는 어떻게 작동하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "저희 비밀번호 생성기는 암호학적으로 안전한 난수 생성기를 사용하여 완전히 무작위적이고 예측할 수 없는 코드 세트를 생성합니다. 이는 최고 수준의 보안을 보장하며, 패턴을 감지하는 것이 불가능합니다. 길이(8, 10, 12자 이상), 문자 유형, 가독성 기능 등 다양한 매개변수를 선택하여 귀하의 필요에 맞는 완벽한 보안 비밀번호를 맞춤 설정할 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "이 도구를 사용하는 것이 안전한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네, passwords-generator.github.io는 완전히 안전합니다. 비밀번호 생성은 로컬 자바스크립트를 사용하여 사용자의 브라우저 내에서만 이루어지며, 귀하의 민감한 정보를 저장하거나 전송하지 않습니다. 무작위로 생성된 비밀번호는 절대 저희 서버에 기록되거나 저장되지 않으므로, 프로세스는 완전히 안전하고 개인 정보를 보호합니다. 생성된 비밀번호는 오직 귀하의 기기에만 남아 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "안전한 비밀번호는 얼마나 길어야 하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "최적의 보안을 위해 최소 12자 이상의 비밀번호를 권장합니다. 특히 중요한 계정의 경우 16자 이상을 사용하는 것이 좋습니다. 문자가 하나씩 추가될 때마다 복잡한 비밀번호를 해독하는 난이도가 기하급수적으로 증가합니다. 8자 비밀번호는 덜 중요한 계정에는 충분할 수 있지만, 12자 이상의 비밀번호는 현대적인 무차별 대입 공격, 해시 크래킹 방법, 정교한 추측 방법으로부터 상당한 보호를 제공합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "강력한 비밀번호를 생성하는 것이 왜 중요한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "위키피디아는 가장 흔한 10,000개의 비밀번호 목록을 유지하고 있으며, 그 중 많은 것들이 여전히 널리 사용되고 있습니다 — 123456, password, qwerty와 같은 단순한 옵션 포함. 하지만 저희 도구의 특별함은 그러한 약한 비밀번호들이 자동으로 제외되어 더 높은 수준의 보안을 제공한다는 점입니다. 저희 서비스를 통해 일반적인 공격에 취약하지 않은 복잡하고 고유한 비밀번호 변형을 만들 수 있습니다. 강력한 인증은 계정에 대한 무단 접근을 방지하는 첫 번째 방어선입니다. 무작위적이고 복잡한 암호문은 디지털 보호를 크게 강화하여 악의적인 행위자가 귀하의 인증 정보를 추측하거나 해독하는 것을 거의 불가능하게 만듭니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "왜 모든 곳에서 동일한 비밀번호를 사용하면 안 되나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "여러 사이트에서 동일한 인증 키를 사용하면 정보 유출 위험이 생깁니다. 한 서비스에서 데이터 유출이 발생하고 비밀번호가 노출되면, 악의적인 행위자가 동일한 비밀번호를 사용하는 다른 모든 계정에 접근할 수 있게 됩니다. 이 기술은 \"자격 증명 도용\"으로 알려져 있으며 매우 흔합니다. 각 계정마다 고유하고 무작위적인 암호문을 사용하면 효과적으로 보호되고 전반적인 사이버 보안이 크게 향상됩니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "강력한 비밀번호도 해독될 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "충분한 시간과 자원이 주어진다면 이론적으로는 모든 비밀번호가 해독될 수 있지만, 다양한 문자 유형이 포함된 12자 이상의 적절하게 생성된 무작위 비밀번호는 현대 기술로 해독하는 데 수세기가 걸릴 것입니다. 문자, 숫자, 기호가 포함된 복잡한 비밀번호는 강력한 코드 조합을 만들어 최대한의 보호를 제공하며, 특히 현대의 속도 제한, CAPTCHA 보호, 계정 잠금 메커니즘과 함께 사용될 때 더욱 효과적입니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "내 비밀번호가 안전한지 어떻게 확인할 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "저희 생성기에는 길이, 문자 다양성, 패턴 인식을 기반으로 복잡성을 평가하는 비밀번호 강도 분석 기능이 포함되어 있습니다. 진정으로 안전한 비밀번호는 최소 12자 이상이어야 하며 대문자, 소문자, 숫자 및 특수 문자를 포함해야 합니다. 강도 표시기는 최대 보안을 위해 \"강함\" 또는 \"매우 강함\" 등급을 달성하는 비밀번호를 만드는 데 도움이 됩니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "안전하게 내 인증 정보를 저장하려면 어떻게 해야 하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "민감한 정보를 안전하게 저장하기 위해 passwords.google.com과 같은 신뢰할 수 있는 비밀번호 관리자 사용을 권장합니다. 이러한 도구는 인증 정보를 암호화하고 자동 채우기 및 기기 간 동기화와 같은 편리한 기능을 제공합니다. 비밀번호 관리자를 사용하면 모든 계정마다 강력하고 무작위적인 비밀번호를 기억할 필요 없이 실용적으로 사용할 수 있어 전반적인 보안이 크게 향상됩니다."
+      }
+    }
+  ]
+}
+</script>
+    <!-- HowTo Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "안전한 비밀번호 만드는 방법",
+      "description": "비밀번호 생성기를 사용하여 강력하고 안전한 비밀번호를 만드는 단계",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "비밀번호 길이 설정",
+          "text": "더 나은 보안을 위해 최소 12자 이상의 길이를 선택하세요. 특히 중요한 계정의 경우 16자 이상으로 설정하는 것이 좋습니다."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "문자 유형 선택",
+          "text": "최대 보안을 위해 대문자, 소문자, 숫자 및 특수문자를 포함하세요."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "비밀번호 생성",
+          "text": "'비밀번호 생성' 버튼을 클릭하여 설정에 기반한 랜덤하고 안전한 비밀번호를 만드세요."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "비밀번호 강도 확인",
+          "text": "강도 표시기를 확인하여 비밀번호가 원하는 수준의 보호를 제공하는지 확인하세요."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "복사 및 저장",
+          "text": "비밀번호를 클립보드에 복사하고 안전한 위치나 비밀번호 관리자에 저장하세요."
+        }
+      ]
+    }
+    </script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+    <link rel="stylesheet" href="/styles.css" />
+    
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col transition-colors duration-300">
+    <header class="w-full bg-white shadow-sm py-2 mb-3">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-shield-alt text-blue-500 text-2xl"></i>
+                <div class="text-xl font-bold text-gray-800">PassGen on Github</div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="themeToggle" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition theme-toggle">
+                    <i class="fas fa-moon text-gray-600"></i>
+                </button>
+                <button id="mobileMenuButton" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition">
+                    <i class="fas fa-globe text-gray-600"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile language menu -->
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 mobile-menu dark:bg-gray-800">
+        <div class="p-4 border-b flex justify-between items-center">
+            <h3 class="font-medium text-gray-800 dark:text-gray-200">언어 선택</h3>
+            <button id="closeMenu" class="p-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="p-4 space-y-4">
+            <a href="/en/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">English</a>
+            <a href="/de/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Deutsch</a>
+            <a href="/fr/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Français</a>
+            <a href="/es/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Español</a>
+            <a href="/ko/" class="block py-2 px-4 rounded hover:bg-blue-50 text-blue-600 font-medium dark:hover:bg-gray-700">한국어</a>
+            <a href="/pt/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Português</a>
+            <a href="/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Русский</a>
+        </div>
+    </div>
+
+    <main class="flex-grow flex flex-col items-center justify-center p-2">
+        <div class="max-w-lg w-full bg-white rounded-2xl shadow-lg p-8 space-y-8 transition-colors duration-300">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold text-gray-800 mb-2">무료 비밀번호 생성기</h1>
+                <p class="text-gray-500">강력하고 독특하며 안전한 비밀번호를 무료로 온라인에서 생성하세요</p>
+            </div>
+            <div class="relative">
+                <input type="text" id="passwordOutput" readonly 
+                    class="w-full px-4 py-4 text-lg bg-gray-100 rounded-lg pr-24 font-mono transition-colors duration-300"
+                    value="생성하기 클릭 →">
+                <div class="absolute right-2 top-1/2 transform -translate-y-1/2 flex space-x-2">
+                    <button id="refreshButton" 
+                        class="px-3 py-1 text-sm bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition-colors"
+                        aria-label="비밀번호 새로고침">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                    <button id="copyButton" 
+                        class="px-3 py-1 text-sm bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+                        aria-label="비밀번호 복사">
+                        <i class="far fa-copy mr-1"></i> 복사
+                    </button>
+                </div>
+            </div>
+
+            <div class="space-y-1">
+                <div class="flex justify-between text-sm text-gray-600">
+                    <span>보안 강도:</span>
+                    <span id="strengthText" class="font-medium">중간</span>
+                </div>
+                <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div id="strengthMeter" class="password-strength-meter bg-yellow-500 w-1/2"></div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <label class="flex justify-between text-sm text-gray-600 mb-2">
+                        비밀번호 길이
+                        <span id="lengthValue">16</span>
+                    </label>
+                    <input type="range" id="lengthSlider" min="4" max="64" value="16" 
+                        class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="uppercaseCheck" checked 
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">대문자</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="lowercaseCheck" checked 
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">소문자</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="numbersCheck" checked 
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">숫자</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="symbolsCheck" 
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">특수문자</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="excludeSimilarCheck"
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">유사 문자 제외</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="easyToReadCheck"
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">읽기 쉬운 형식</span>
+                    </label>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <button id="generateButton" 
+                        class="py-4 bg-blue-500 text-white rounded-lg text-lg font-semibold hover:bg-blue-600 transition-colors"
+                        aria-label="비밀번호 생성">
+                        <i class="fas fa-key mr-2"></i> 생성하기
+                    </button>
+                    <button id="generatePronounceableButton" 
+                        class="py-4 bg-green-500 text-white rounded-lg text-lg font-semibold hover:bg-green-600 transition-colors"
+                        aria-label="기억하기 쉬운 비밀번호 생성">
+                        <i class="fas fa-comment mr-2"></i> 기억하기 쉬운 형식
+                    </button>
+                </div>
+            </div>
+
+            <!-- Only Password History section -->
+            <div class="border-t pt-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-semibold text-gray-700">비밀번호 기록</h2>
+                </div>
+                
+                <div id="historyPanel" class="bg-gray-50 p-4 rounded-lg">
+                    <div id="passwordHistory" class="space-y-2 max-h-40 overflow-y-auto">
+                        <!-- Password history will be here -->
+                    </div>
+                    <div class="text-right mt-2">
+                        <button id="clearHistoryButton" class="text-xs text-red-500 hover:text-red-700">
+                            기록 삭제
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-lg w-full mt-8 bg-white rounded-2xl shadow-lg p-8 transition-colors duration-300">
+            <!-- How To Use Section -->
+            <div class="mb-8" id="how-to-use">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">비밀번호 생성기 사용 방법</h2>
+                <p class="text-gray-600 mb-4">
+                    고급 비밀번호 생성기로 강력하고 랜덤한 비밀번호를 만드는 것은 매우 간단합니다. 다음 단계를 따라하세요:
+                </p>
+                <ol class="list-decimal pl-5 text-gray-600 space-y-2">
+                    <li>원하는 비밀번호 길이 선택 (보안을 위해 최소 12자 이상 권장)</li>
+                    <li>포함할 문자 유형 선택 (대문자, 소문자, 숫자, 특수문자)</li>
+                    <li>"유사 문자 제외"와 같은 추가 옵션을 활성화하여 혼동되는 문자 방지</li>
+                    <li>"생성하기"를 클릭하여 완전히 랜덤한 문자열을 자동으로 생성하거나, "기억하기 쉬운 형식"을 선택하여 기억하기 쉬운 대안 생성</li>
+                    <li>"복사" 버튼을 사용하여 새로운 안전한 비밀번호를 클립보드에 복사</li>
+                </ol>
+                <p class="text-gray-600 mt-4">
+                    최대 보안을 위해서는 16자 이상의 길이와 모든 문자 유형을 포함하는 비밀번호를 생성하세요. 진정으로 복잡한 비밀번호는 개인 정보를 기반으로 하지 않고 무작위적이고 고유해야 함을 기억하세요.
+                </p>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="mb-8" id="benefits">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">주요 기능</h2>
+                <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                    <li><strong>향상된 보안:</strong> 암호학적으로 안전한 난수 생성 방식을 사용하여 완전히 예측 불가능한 비밀번호 생성</li>
+                    <li><strong>맞춤 설정:</strong> 특정 요구 사항에 맞게 비밀번호 길이와 문자 구성을 조절 가능</li>
+                    <li><strong>강도 표시기:</strong> 보안 수준에 대한 시각적 피드백을 통해 더 강력한 비밀번호 생성 지원</li>
+                    <li><strong>기억하기 쉬운 옵션:</strong> 안전하면서도 기억하기 쉬운 발음 가능한 보안 문구 생성</li>
+                    <li><strong>브라우저 기반:</strong> 모든 처리는 사용자의 브라우저에서 이루어져 민감한 데이터가 외부로 전송되거나 저장되지 않음</li>
+                    <li><strong>비밀번호 기록:</strong> 최근 생성된 보안 키에 편리하게 접근 가능</li>
+                </ul>
+            </div>
+
+            <!-- FAQ Section -->
+            <div id="faq" class="space-y-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">자주 묻는 질문</h2>
+                
+                <div class="accordion-container">
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            비밀번호 생성기는 어떻게 작동하나요?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                저희 비밀번호 생성기는 암호학적으로 안전한 난수 생성기를 사용하여 완전히 무작위적이고 예측할 수 없는 코드 세트를 생성합니다. 이는 최고 수준의 보안을 보장하며, 패턴을 감지하는 것이 불가능합니다. 길이(8, 10, 12자 이상), 문자 유형, 가독성 기능 등 다양한 매개변수를 선택하여 귀하의 필요에 맞는 완벽한 보안 비밀번호를 맞춤 설정할 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            이 도구를 사용하는 것이 안전한가요?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                네, passwords-generator.github.io는 완전히 안전합니다. 비밀번호 생성은 로컬 자바스크립트를 사용하여 사용자의 브라우저 내에서만 이루어지며, 귀하의 민감한 정보를 저장하거나 전송하지 않습니다. 무작위로 생성된 비밀번호는 절대 저희 서버에 기록되거나 저장되지 않으므로, 프로세스는 완전히 안전하고 개인 정보를 보호합니다. 생성된 비밀번호는 오직 귀하의 기기에만 남아 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            안전한 비밀번호는 얼마나 길어야 하나요?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                최적의 보안을 위해 최소 12자 이상의 비밀번호를 권장합니다. 특히 중요한 계정의 경우 16자 이상을 사용하는 것이 좋습니다. 문자가 하나씩 추가될 때마다 복잡한 비밀번호를 해독하는 난이도가 기하급수적으로 증가합니다. 8자 비밀번호는 덜 중요한 계정에는 충분할 수 있지만, 12자 이상의 비밀번호는 현대적인 무차별 대입 공격, 해시 크래킹 방법, 정교한 추측 방법으로부터 상당한 보호를 제공합니다.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            강력한 비밀번호를 생성하는 것이 왜 중요한가요?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                             <a href="https://en.wikipedia.org/wiki/Wikipedia:10,000_most_common_passwords" target="_blank" rel="noopener noreferrer nofollow" class="text-blue-600">위키피디아는 가장 흔한 10,000개의 비밀번호 목록</a>을 유지하고 있으며, 그 중 많은 것들이 여전히 널리 사용되고 있습니다 — <code>123456</code>, <code>password</code>, <code>qwerty</code>와 같은 단순한 옵션 포함. 하지만 저희 도구의 특별함은 그러한 약한 비밀번호들이 자동으로 제외되어 더 높은 수준의 보안을 제공한다는 점입니다. 저희 서비스를 통해 일반적인 공격에 취약하지 않은 복잡하고 고유한 비밀번호 변형을 만들 수 있습니다. 강력한 인증은 계정에 대한 무단 접근을 방지하는 첫 번째 방어선입니다. 무작위적이고 복잡한 암호문은 디지털 보호를 크게 강화하여 악의적인 행위자가 귀하의 인증 정보를 추측하거나 해독하는 것을 거의 불가능하게 만듭니다.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            왜 모든 곳에서 동일한 비밀번호를 사용하면 안 되나요?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                여러 사이트에서 동일한 인증 키를 사용하면 정보 유출 위험이 생깁니다. 한 서비스에서 데이터 유출이 발생하고 비밀번호가 노출되면, 악의적인 행위자가 동일한 비밀번호를 사용하는 다른 모든 계정에 접근할 수 있게 됩니다. 이 기술은 "자격 증명 도용"으로 알려져 있으며 매우 흔합니다. 각 계정마다 고유하고 무작위적인 암호문을 사용하면 효과적으로 보호되고 전반적인 사이버 보안이 크게 향상됩니다.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 6 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            강력한 비밀번호도 해독될 수 있나요?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                충분한 시간과 자원이 주어진다면 이론적으로는 모든 비밀번호가 해독될 수 있지만, 다양한 문자 유형이 포함된 12자 이상의 적절하게 생성된 무작위 비밀번호는 현대 기술로 해독하는 데 수세기가 걸릴 것입니다. 문자, 숫자, 기호가 포함된 복잡한 비밀번호는 강력한 코드 조합을 만들어 최대한의 보호를 제공하며, 특히 현대의 속도 제한, CAPTCHA 보호, 계정 잠금 메커니즘과 함께 사용될 때 더욱 효과적입니다.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 7 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            내 비밀번호가 안전한지 어떻게 확인할 수 있나요?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                저희 생성기에는 길이, 문자 다양성, 패턴 인식을 기반으로 복잡성을 평가하는 비밀번호 강도 분석 기능이 포함되어 있습니다. 진정으로 안전한 비밀번호는 최소 12자 이상이어야 하며 대문자, 소문자, 숫자 및 특수 문자를 포함해야 합니다. 강도 표시기는 최대 보안을 위해 "강함" 또는 "매우 강함" 등급을 달성하는 비밀번호를 만드는 데 도움이 됩니다.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 8 -->
+                    <div class="accordion-item pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            안전하게 내 인증 정보를 저장하려면 어떻게 해야 하나요?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                민감한 정보를 안전하게 저장하기 위해 passwords.google.com과 같은 신뢰할 수 있는 비밀번호 관리자 사용을 권장합니다. 이러한 도구는 인증 정보를 암호화하고 자동 채우기 및 기기 간 동기화와 같은 편리한 기능을 제공합니다. 비밀번호 관리자를 사용하면 모든 계정마다 강력하고 무작위적인 비밀번호를 기억할 필요 없이 실용적으로 사용할 수 있어 전반적인 보안이 크게 향상됩니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-xs text-gray-400 text-center mt-8">최종 업데이트: 2025년 4월 17일</p>
+        </div>
+    </main>
+
+    <footer class="bg-white py-6 mt-12 shadow-inner transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-600 text-sm">&copy; 2025 passwords-generator.github.io. 모든 권리 보유.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="/about/" class="text-gray-600 hover:text-blue-500 transition-colors">소개</a>
+                    <a href="/privacy/" class="text-gray-600 hover:text-blue-500 transition-colors">개인정보 정책</a>
+                    <a href="/contacts/" class="text-gray-600 hover:text-blue-500 transition-colors">문의하기</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="/main.js"></script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(88860064, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/88860064" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --></body>
+</html>

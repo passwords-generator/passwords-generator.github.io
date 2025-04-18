@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Générez des mots de passe forts et sécurisés instantanément. Utilisez notre générateur de mots de passe aléatoires pour créer des codes uniques en ligne en un seul clic. Aucune inscription requise.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://passwords-generator.github.io/fr/">
+    <title>Générateur de Mots de Passe en Ligne - Créez des Mots de Passe Forts, Sécurisés et Aléatoires</title>
+    
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Générateur de Mots de Passe en Ligne - Créez des Mots de Passe Forts, Sécurisés et Aléatoires">
+    <meta property="og:description" content="Générez des mots de passe forts et sécurisés instantanément. Utilisez notre générateur de mots de passe aléatoires pour créer des codes uniques en ligne en un seul clic. Aucune inscription requise.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://passwords-generator.github.io/fr/">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="alternate" hreflang="ru" href="https://passwords-generator.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://passwords-generator.github.io/en/" />
+    <link rel="alternate" hreflang="de" href="https://passwords-generator.github.io/de/" />
+    <link rel="alternate" hreflang="fr" href="https://passwords-generator.github.io/fr/" />
+    <link rel="alternate" hreflang="es" href="https://passwords-generator.github.io/es/" />
+    <link rel="alternate" hreflang="ko" href="https://passwords-generator.github.io/ko/" />
+    <link rel="alternate" hreflang="pt" href="https://passwords-generator.github.io/pt/" />
+    <link rel="alternate" hreflang="x-default" href="https://passwords-generator.github.io/" />
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SecurePass",
+      "description": "Générez des mots de passe forts et sécurisés instantanément. Utilisez notre générateur de mots de passe aléatoires pour créer des codes uniques en ligne en un seul clic. Aucune inscription requise.",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment fonctionne le générateur de mots de passe ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Notre générateur utilise un algorithme cryptographiquement sécurisé pour créer des ensembles de codes complètement aléatoires et imprévisibles. Cela garantit le plus haut niveau de sécurité, rendant impossible la détection de modèles. Vous pouvez personnaliser vos mots de passe en sélectionnant divers paramètres comme la longueur (8, 10, 12 caractères ou plus), les types de caractères et les fonctions de lisibilité pour créer le mot de passe parfaitement sécurisé selon vos besoins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Est-il sûr d'utiliser cet outil ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, passwords-generator.github.io est totalement sécurisé. La génération des mots de passe se déroule entièrement dans votre navigateur en utilisant JavaScript local, et nous ne stockons ni ne transmettons jamais vos informations confidentielles. Les mots de passe générés aléatoirement ne sont jamais enregistrés ou sauvegardés sur nos serveurs, ce qui rend le processus complètement sécurisé et privé. Vos mots de passe générés restent exclusivement sur votre appareil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelle doit être la longueur d'un mot de passe sécurisé ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pour une sécurité optimale, nous recommandons des mots de passe d'au moins 12 caractères. Pour les comptes particulièrement importants, envisagez d'utiliser 16 caractères ou plus. Chaque caractère supplémentaire augmente exponentiellement la complexité du déchiffrement d'un mot de passe complexe. Un mot de passe de 8 caractères peut être suffisant pour des comptes moins importants, mais les mots de passe de 12 caractères ou plus offrent une protection substantielle contre les attaques modernes par force brute, les méthodes de craquage de hachage et les techniques sophistiquées de devinettes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pourquoi est-il important de générer des mots de passe forts ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wikipédia maintient une liste des 10 000 mots de passe les plus courants, dont beaucoup sont encore largement utilisés — y compris des options simples comme 123456, password et qwerty. Cependant, l'unicité de notre outil garantit que ces mots de passe faibles sont automatiquement exclus, offrant un niveau de sécurité plus élevé. Notre service vous permet de créer des variations de mots de passe complexes et uniques qui sont moins vulnérables aux attaques courantes. Une authentification forte est votre première ligne de défense contre les accès non autorisés à vos comptes. Une phrase de passe aléatoire et complexe améliore considérablement votre protection numérique, rendant presque impossible pour les acteurs malveillants de deviner ou de craquer vos identifiants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pourquoi ne devrais-je pas utiliser le même mot de passe partout ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Utiliser des clés d'authentification identiques sur plusieurs sites crée un risque de fuite d'informations. Si un service subit une violation de données et que votre mot de passe est exposé, des acteurs malveillants peuvent accéder à tous vos autres comptes utilisant le même mot de passe. Cette technique, connue sous le nom de \"bourrage d'identifiants\", est extrêmement courante. L'utilisation de phrases de passe uniques et aléatoires pour chaque compte protège efficacement et améliore considérablement votre cybersécurité globale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Un mot de passe fort peut-il être craqué ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Théoriquement, n'importe quel mot de passe peut être craqué avec suffisamment de temps et de ressources, mais un mot de passe aléatoire correctement généré de 12 caractères ou plus avec divers types de caractères prendrait des siècles à craquer avec la technologie moderne. Les mots de passe complexes avec des lettres, des chiffres et des symboles créent des combinaisons de code robustes, offrant une protection maximale, surtout avec les mécanismes modernes de limitation de tentatives, de protection CAPTCHA et de verrouillage de compte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment puis-je vérifier si mon mot de passe est sécurisé ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Notre générateur inclut une analyse de la force du mot de passe qui évalue la complexité en fonction de la longueur, de la diversité des caractères et de la reconnaissance de motifs. Un mot de passe vraiment sécurisé doit contenir au moins 12 caractères et inclure des lettres majuscules et minuscules, des chiffres et des caractères spéciaux. L'indicateur de force vous aide à créer des mots de passe qui atteignent une classification \"Fort\" ou \"Très fort\" pour une sécurité maximale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment puis-je stocker mes identifiants en toute sécurité ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nous recommandons d'utiliser un gestionnaire de mots de passe fiable, comme passwords.google.com, pour stocker en toute sécurité vos données confidentielles. Ces outils chiffrent vos identifiants et incluent souvent des fonctionnalités pratiques comme le remplissage automatique et la synchronisation entre appareils. Les gestionnaires de mots de passe rendent pratique l'utilisation de mots de passe forts et aléatoires pour chaque compte sans avoir à tous les mémoriser, améliorant considérablement votre sécurité globale."
+      }
+    }
+  ]
+}
+    </script>
+    <!-- HowTo Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Comment créer un mot de passe sécurisé",
+      "description": "Suivez ces étapes pour créer un mot de passe fort et sécurisé avec notre générateur",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Définir la longueur du mot de passe",
+          "text": "Choisissez une longueur d'au moins 12 caractères pour une meilleure sécurité. Pour les comptes particulièrement importants, optez pour 16+ caractères."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sélectionner les types de caractères",
+          "text": "Incluez des lettres majuscules et minuscules, des chiffres et des caractères spéciaux pour une sécurité maximale."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Générer le mot de passe",
+          "text": "Cliquez sur le bouton 'Générer un mot de passe' pour créer un mot de passe aléatoire et sécurisé selon vos paramètres."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Vérifier la force du mot de passe",
+          "text": "Consultez l'indicateur de force pour vous assurer que votre mot de passe offre le niveau de protection souhaité."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Copier et sauvegarder",
+          "text": "Copiez le mot de passe dans le presse-papiers et enregistrez-le dans un endroit sécurisé ou un gestionnaire de mots de passe."
+        }
+      ]
+    }
+    </script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+    <link rel="stylesheet" href="/styles.css" />
+    
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col transition-colors duration-300">
+    <header class="w-full bg-white shadow-sm py-2 mb-3">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-shield-alt text-blue-500 text-2xl"></i>
+                <div class="text-xl font-bold text-gray-800">PassGen sur Github</div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="themeToggle" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition theme-toggle">
+                    <i class="fas fa-moon text-gray-600"></i>
+                </button>
+                <button id="mobileMenuButton" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition">
+                    <i class="fas fa-globe text-gray-600"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile language menu -->
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 mobile-menu dark:bg-gray-800">
+        <div class="p-4 border-b flex justify-between items-center">
+            <h3 class="font-medium text-gray-800 dark:text-gray-200">Choisir la langue</h3>
+            <button id="closeMenu" class="p-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="p-4 space-y-4">
+            <a href="/en/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">English</a>
+            <a href="/de/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Deutsch</a>
+            <a href="/fr/" class="block py-2 px-4 rounded hover:bg-blue-50 text-blue-600 font-medium dark:hover:bg-gray-700">Français</a>
+            <a href="/es/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Español</a>
+            <a href="/ko/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">한국어</a>
+            <a href="/pt/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Português</a>
+            <a href="/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Русский</a>
+        </div>
+    </div>
+
+    <main class="flex-grow flex flex-col items-center justify-center p-2">
+        <div class="max-w-lg w-full bg-white rounded-2xl shadow-lg p-8 space-y-8 transition-colors duration-300">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold text-gray-800 mb-2">Générateur de Mots de Passe Gratuit</h1>
+                <p class="text-gray-500">Créez des mots de passe forts, uniques et sécurisés en ligne gratuitement</p>
+            </div>
+            <div class="relative">
+                <input type="text" id="passwordOutput" readonly 
+                    class="w-full px-4 py-4 text-lg bg-gray-100 rounded-lg pr-24 font-mono transition-colors duration-300"
+                    value="Cliquez sur Générer →">
+                <div class="absolute right-2 top-1/2 transform -translate-y-1/2 flex space-x-2">
+                    <button id="refreshButton" 
+                        class="px-3 py-1 text-sm bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition-colors"
+                        aria-label="Actualiser le mot de passe">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                    <button id="copyButton" 
+                        class="px-3 py-1 text-sm bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+                        aria-label="Copier le mot de passe">
+                        <i class="far fa-copy mr-1"></i> Copier
+                    </button>
+                </div>
+            </div>
+
+            <div class="space-y-1">
+                <div class="flex justify-between text-sm text-gray-600">
+                    <span>Force:</span>
+                    <span id="strengthText" class="font-medium">Moyenne</span>
+                </div>
+                <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div id="strengthMeter" class="password-strength-meter bg-yellow-500 w-1/2"></div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <label class="flex justify-between text-sm text-gray-600 mb-2">
+                        Longueur du mot de passe
+                        <span id="lengthValue">8</span>
+                    </label>
+                    <input type="range" id="lengthSlider" min="4" max="64" value="8" 
+                        class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="uppercaseCheck" checked 
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">Lettres majuscules</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="lowercaseCheck" checked 
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">Lettres minuscules</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="numbersCheck" checked 
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">Chiffres</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="symbolsCheck" 
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">Symboles</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="excludeSimilarCheck"
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">Exclure les similaires</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="easyToReadCheck"
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">Facile à lire</span>
+                    </label>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <button id="generateButton" 
+                        class="py-4 bg-blue-500 text-white rounded-lg text-lg font-semibold hover:bg-blue-600 transition-colors"
+                        aria-label="Générer un mot de passe">
+                        <i class="fas fa-key mr-2"></i> Générer
+                    </button>
+                    <button id="generatePronounceableButton" 
+                        class="py-4 bg-green-500 text-white rounded-lg text-lg font-semibold hover:bg-green-600 transition-colors"
+                        aria-label="Générer un mot de passe mémorisable">
+                        <i class="fas fa-comment mr-2"></i> Mémorisable
+                    </button>
+                </div>
+            </div>
+
+            <!-- Only Password History section -->
+            <div class="border-t pt-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-semibold text-gray-700">Historique des mots de passe</h2>
+                </div>
+                
+                <div id="historyPanel" class="bg-gray-50 p-4 rounded-lg">
+                    <div id="passwordHistory" class="space-y-2 max-h-40 overflow-y-auto">
+                        <!-- Password history will be here -->
+                    </div>
+                    <div class="text-right mt-2">
+                        <button id="clearHistoryButton" class="text-xs text-red-500 hover:text-red-700">
+                            Effacer l'historique
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-lg w-full mt-8 bg-white rounded-2xl shadow-lg p-8 transition-colors duration-300">
+            <!-- How To Use Section -->
+            <div class="mb-8" id="how-to-use">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Comment utiliser le générateur de mots de passe</h2>
+                <p class="text-gray-600 mb-4">
+                    Créer un mot de passe fort et aléatoire est simple avec notre générateur avancé. Suivez ces étapes faciles :
+                </p>
+                <ol class="list-decimal pl-5 text-gray-600 space-y-2">
+                    <li>Sélectionnez la longueur souhaitée (nous recommandons au moins 12 caractères pour une bonne sécurité)</li>
+                    <li>Choisissez les types de caractères à inclure (majuscules, minuscules, chiffres, symboles)</li>
+                    <li>Activez des options supplémentaires comme "Exclure les similaires" pour éviter les caractères confus</li>
+                    <li>Cliquez sur "Générer" pour créer automatiquement une chaîne complètement aléatoire, ou choisissez "Mémorisable" pour une alternative plus facile à retenir</li>
+                    <li>Utilisez le bouton "Copier" pour copier votre nouveau mot de passe sécurisé dans le presse-papiers</li>
+                </ol>
+                <p class="text-gray-600 mt-4">
+                    Pour une sécurité maximale, créez des mots de passe de 16 caractères ou plus et incluez tous les types de caractères. N'oubliez pas qu'un mot de passe vraiment complexe doit être aléatoire et unique, non basé sur des informations personnelles.
+                </p>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="mb-8" id="benefits">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Fonctionnalités</h2>
+                <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                    <li><strong>Sécurité renforcée :</strong> Utilise une génération aléatoire cryptographiquement sécurisée pour des mots de passe vraiment imprévisibles</li>
+                    <li><strong>Personnalisation :</strong> Contrôlez la longueur et la composition des caractères pour répondre à des exigences spécifiques</li>
+                    <li><strong>Indicateur de force :</strong> Un retour visuel sur la robustesse de vos identifiants vous aide à créer des mots de passe plus solides</li>
+                    <li><strong>Option mémorisable :</strong> Générez des phrases de sécurité prononçables qui sont à la fois sécurisées et plus faciles à mémoriser</li>
+                    <li><strong>Traitement local :</strong> Tout le traitement se fait dans votre navigateur - nous ne voyons ni ne stockons jamais vos données sensibles</li>
+                    <li><strong>Historique des mots de passe :</strong> Accès pratique aux clés de sécurité récemment générées</li>
+                </ul>
+            </div>
+
+            <!-- FAQ Section -->
+            <div id="faq" class="space-y-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Questions fréquemment posées</h2>
+                
+                <div class="accordion-container">
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            Comment fonctionne le générateur de mots de passe ?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                Notre générateur utilise un algorithme cryptographiquement sécurisé pour créer des ensembles de codes complètement aléatoires et imprévisibles. Cela garantit le plus haut niveau de sécurité, rendant impossible la détection de modèles. Vous pouvez personnaliser vos mots de passe en sélectionnant divers paramètres comme la longueur (8, 10, 12 caractères ou plus), les types de caractères et les fonctions de lisibilité pour créer le mot de passe parfaitement sécurisé selon vos besoins.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            Est-il sûr d'utiliser cet outil ?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                Oui, passwords-generator.github.io est totalement sécurisé. La génération des mots de passe se déroule entièrement dans votre navigateur en utilisant JavaScript local, et nous ne stockons ni ne transmettons jamais vos informations confidentielles. Les mots de passe générés aléatoirement ne sont jamais enregistrés ou sauvegardés sur nos serveurs, ce qui rend le processus complètement sécurisé et privé. Vos mots de passe générés restent exclusivement sur votre appareil.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            Quelle doit être la longueur d'un mot de passe sécurisé ?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                Pour une sécurité optimale, nous recommandons des mots de passe d'au moins 12 caractères. Pour les comptes particulièrement importants, envisagez d'utiliser 16 caractères ou plus. Chaque caractère supplémentaire augmente exponentiellement la complexité du déchiffrement d'un mot de passe complexe. Un mot de passe de 8 caractères peut être suffisant pour des comptes moins importants, mais les mots de passe de 12 caractères ou plus offrent une protection substantielle contre les attaques modernes par force brute, les méthodes de craquage de hachage et les techniques sophistiquées de devinettes.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            Pourquoi est-il important de générer des mots de passe forts ?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                             <a href="https://en.wikipedia.org/wiki/Wikipedia:10,000_most_common_passwords" target="_blank" rel="noopener noreferrer nofollow" class="text-blue-600">Wikipédia maintient une liste des 10 000 mots de passe les plus courants</a>, dont beaucoup sont encore largement utilisés — y compris des options simples comme <code>123456</code>, <code>password</code> et <code>qwerty</code>. Cependant, l'unicité de notre outil garantit que ces mots de passe faibles sont automatiquement exclus, offrant un niveau de sécurité plus élevé. Notre service vous permet de créer des variations de mots de passe complexes et uniques qui sont moins vulnérables aux attaques courantes. Une authentification forte est votre première ligne de défense contre les accès non autorisés à vos comptes. Une phrase de passe aléatoire et complexe améliore considérablement votre protection numérique, rendant presque impossible pour les acteurs malveillants de deviner ou de craquer vos identifiants.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            Pourquoi ne devrais-je pas utiliser le même mot de passe partout ?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                Utiliser des clés d'authentification identiques sur plusieurs sites crée un risque de fuite d'informations. Si un service subit une violation de données et que votre mot de passe est exposé, des acteurs malveillants peuvent accéder à tous vos autres comptes utilisant le même mot de passe. Cette technique, connue sous le nom de "bourrage d'identifiants", est extrêmement courante. L'utilisation de phrases de passe uniques et aléatoires pour chaque compte protège efficacement et améliore considérablement votre cybersécurité globale.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 6 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            Un mot de passe fort peut-il être craqué ?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                Théoriquement, n'importe quel mot de passe peut être craqué avec suffisamment de temps et de ressources, mais un mot de passe aléatoire correctement généré de 12 caractères ou plus avec divers types de caractères prendrait des siècles à craquer avec la technologie moderne. Les mots de passe complexes avec des lettres, des chiffres et des symboles créent des combinaisons de code robustes, offrant une protection maximale, surtout avec les mécanismes modernes de limitation de tentatives, de protection CAPTCHA et de verrouillage de compte.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 7 -->
+                    <div class="accordion-item border-b pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            Comment puis-je vérifier si mon mot de passe est sécurisé ?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                Notre générateur inclut une analyse de la force du mot de passe qui évalue la complexité en fonction de la longueur, de la diversité des caractères et de la reconnaissance de motifs. Un mot de passe vraiment sécurisé doit contenir au moins 12 caractères et inclure des lettres majuscules et minuscules, des chiffres et des caractères spéciaux. L'indicateur de force vous aide à créer des mots de passe qui atteignent une classification "Fort" ou "Très fort" pour une sécurité maximale.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 8 -->
+                    <div class="accordion-item pb-2">
+                        <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+                            Comment puis-je stocker mes identifiants en toute sécurité ?
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="py-3 text-gray-600">
+                                Nous recommandons d'utiliser un gestionnaire de mots de passe fiable, comme passwords.google.com, pour stocker en toute sécurité vos données confidentielles. Ces outils chiffrent vos identifiants et incluent souvent des fonctionnalités pratiques comme le remplissage automatique et la synchronisation entre appareils. Les gestionnaires de mots de passe rendent pratique l'utilisation de mots de passe forts et aléatoires pour chaque compte sans avoir à tous les mémoriser, améliorant considérablement votre sécurité globale.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-xs text-gray-400 text-center mt-8">Dernière mise à jour : 17/04/2025</p>
+        </div>
+    </main>
+
+    <footer class="bg-white py-6 mt-12 shadow-inner transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p class="text-gray-600 text-sm">&copy; 2025 passwords-generator.github.io. Tous droits réservés.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="/about/" class="text-gray-600 hover:text-blue-500 transition-colors">À propos</a>
+                <a href="/privacy/" class="text-gray-600 hover:text-blue-500 transition-colors">Politique de confidentialité</a>
+                <a href="/contacts/" class="text-gray-600 hover:text-blue-500 transition-colors">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/main.js"></script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(88860064, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/88860064" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --></body>
+</html>

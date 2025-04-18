@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Политика конфиденциальности passwords-generator.github.io. Узнайте, как мы обрабатываем ваши данные и обеспечиваем их защиту при использовании нашего генератора паролей.">
+    <title>Политика конфиденциальности - passwords-generator.github.io</title>
+    
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Политика конфиденциальности - passwords-generator.github.io">
+    <meta property="og:description" content="Политика конфиденциальности passwords-generator.github.io. Узнайте, как мы обрабатываем ваши данные и обеспечиваем их защиту при использовании нашего генератора паролей.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://passwords-generator.github.io/privacy/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://passwords-generator.github.io/privacy/">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+    <link rel="stylesheet" href="/styles.css" />
+    
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col transition-colors duration-300">
+    <header class="w-full bg-white shadow-sm py-2 mb-3">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-shield-alt text-blue-500 text-2xl"></i>
+                <div class="text-xl font-bold text-gray-800">PassGen на Github</div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="themeToggle" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition theme-toggle">
+                    <i class="fas fa-moon text-gray-600"></i>
+                </button>
+                <button id="mobileMenuButton" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition">
+                    <i class="fas fa-globe text-gray-600"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile language menu -->
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 mobile-menu dark:bg-gray-800">
+        <div class="p-4 border-b flex justify-between items-center">
+            <h3 class="font-medium text-gray-800 dark:text-gray-200">Выберите язык</h3>
+            <button id="closeMenu" class="p-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="p-4 space-y-4">
+            <a href="/en/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">English</a>
+            <a href="/de/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Deutsch</a>
+            <a href="/fr/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Français</a>
+            <a href="/es/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Español</a>
+            <a href="/ko/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">한국어</a>
+            <a href="/pt/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Português</a>
+            <a href="/" class="block py-2 px-4 rounded hover:bg-blue-50 text-blue-600 font-medium dark:hover:bg-gray-700">Русский</a>
+        </div>
+    </div>
+
+    <main class="flex-grow flex flex-col items-center justify-center p-4">
+        <div class="max-w-3xl w-full bg-white rounded-2xl shadow-lg p-8 space-y-8 transition-colors duration-300">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold text-gray-800 mb-2">Политика конфиденциальности</h1>
+                <p class="text-gray-500">Как мы обрабатываем и защищаем ваши данные при использовании passwords-generator.github.io</p>
+            </div>
+
+            <div class="border-b pb-6">
+                <div class="flex justify-center mb-6">
+                    <div class="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center shadow-md">
+                        <i class="fas fa-lock text-blue-500 text-4xl"></i>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    Мы серьезно относимся к защите ваших данных. Эта политика конфиденциальности описывает, какие данные мы собираем, как их используем и какие меры принимаем для их защиты. Последнее обновление: 15 апреля 2025 г.
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Общие положения</h2>
+                    <p class="text-gray-700 mb-4">
+                        Сервис passwords-generator.github.io (далее — «Сервис») разработан с приоритетом на обеспечение максимальной конфиденциальности пользователей. Наш базовый принцип — минимизация сбора данных. В этом документе описаны политики и процедуры по сбору, использованию и раскрытию вашей информации.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Используя наш Сервис, вы соглашаетесь с условиями, описанными в этой Политике конфиденциальности. Если вы не согласны с этими условиями, пожалуйста, не используйте наш Сервис.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Какие данные мы собираем</h2>
+                    <div class="p-4 bg-blue-50 rounded-lg mb-4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <i class="fas fa-check-circle text-blue-500 text-xl"></i>
+                            <h3 class="font-semibold text-gray-800">Генерация паролей</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            Все пароли генерируются непосредственно в вашем браузере. Мы никогда не получаем доступ, не храним и не передаем созданные пароли на наши серверы или третьим лицам.
+                        </p>
+                    </div>
+                    <div class="p-4 bg-green-50 rounded-lg mb-4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <i class="fas fa-analytics text-green-500 text-xl"></i>
+                            <h3 class="font-semibold text-gray-800">Анонимная статистика использования</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            Мы собираем ограниченную анонимную информацию для аналитики. Сюда входит информация о:
+                        </p>
+                        <ul class="list-disc pl-6 mt-2 text-gray-700">
+                            <li>Количестве посещений</li>
+                            <li>Используемых браузерах и операционных системах</li>
+                            <li>Стране происхождения запроса (без точной геолокации)</li>
+                            <li>Предпочитаемых настройках генерации (длина паролей, использование специальных символов и т.д.)</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-purple-50 rounded-lg">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <i class="fas fa-cookie text-purple-500 text-xl"></i>
+                            <h3 class="font-semibold text-gray-800">Файлы cookie и локальное хранилище</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            Мы используем файлы cookie и локальное хранилище браузера только для:
+                        </p>
+                        <ul class="list-disc pl-6 mt-2 text-gray-700">
+                            <li>Сохранения ваших предпочтений (тема, языковые настройки)</li>
+                            <li>Запоминания выбранных вами параметров генерации паролей</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Как мы используем собранные данные</h2>
+                    <p class="text-gray-700 mb-4">
+                        Анонимные данные о использовании сервиса применяются исключительно для:
+                    </p>
+                    <ul class="list-disc pl-6 mb-4 text-gray-700">
+                        <li>Улучшения и оптимизации работы Сервиса</li>
+                        <li>Обнаружения и исправления ошибок</li>
+                        <li>Анализа предпочтений пользователей для развития Сервиса</li>
+                        <li>Оценки производительности Сервиса</li>
+                    </ul>
+                    
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Передача данных третьим лицам</h2>
+                    <p class="text-gray-700 mb-4">
+                        Мы не передаем личные данные пользователей третьим лицам за исключением следующих случаев:
+                    </p>
+                    <ul class="list-disc pl-6 text-gray-700">
+                        <li>Если это необходимо для соблюдения закона или судебного решения</li>
+                        <li>Для защиты прав и безопасности пользователей Сервиса</li>
+                        <li>Для выявления и предотвращения мошенничества</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Безопасность данных</h2>
+                    <p class="text-gray-700 mb-4">
+                        Мы принимаем все необходимые меры для защиты ваших данных от несанкционированного доступа, изменения, раскрытия или уничтожения:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 bg-yellow-50 rounded-lg">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <i class="fas fa-shield-alt text-yellow-500 text-xl"></i>
+                                <h3 class="font-semibold text-gray-800">Защищенное соединение</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Весь трафик между вашим устройством и нашим Сервисом шифруется с использованием протокола TLS.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-blue-50 rounded-lg">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <i class="fas fa-laptop-code text-blue-500 text-xl"></i>
+                                <h3 class="font-semibold text-gray-800">Локальная обработка</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Все операции по <a href="https://passwords-generator.github.io/" class="text-blue-600" rel="noopener noreferrer">генерации паролей онлайн</a> выполняются исключительно на вашем устройстве.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Права пользователей</h2>
+                    <p class="text-gray-700 mb-4">
+                        Как пользователь нашего Сервиса, вы имеете право:
+                    </p>
+                    <ul class="list-disc pl-6 text-gray-700">
+                        <li>Отключить сбор аналитических данных (через настройки браузера)</li>
+                        <li>Запретить использование файлов cookie (через настройки браузера)</li>
+                        <li>Запросить информацию о собранных данных (через форму обратной связи)</li>
+                        <li>Запросить удаление собранных данных (через форму обратной связи)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Изменения в политике конфиденциальности</h2>
+                    <p class="text-gray-700 mb-4">
+                        Мы можем обновлять нашу Политику конфиденциальности по мере необходимости. Мы уведомим вас о любых изменениях путем публикации новой версии Политики конфиденциальности на этой странице.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="pt-6 border-t">
+                <p class="text-gray-700 mb-4">
+                    Если у вас есть вопросы или замечания относительно нашей Политики конфиденциальности, пожалуйста, свяжитесь с нами через форму обратной связи на странице контакты.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white py-6 mt-12 shadow-inner transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-600 text-sm">&copy; 2025 passwords-generator.github.io. Все права защищены.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="/about/" class="text-gray-600 hover:text-blue-500 transition-colors">О сервисе</a>
+                    <a href="/privacy/" class="text-gray-600 hover:text-blue-500 transition-colors">Политика конфиденциальности</a>
+                    <a href="/contacts/" class="text-gray-600 hover:text-blue-500 transition-colors">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="/main.js"></script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(88860064, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/88860064" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --></body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generieren Sie sofort starke und sichere Passwörter. Nutzen Sie unseren zufälligen Passwortgenerator, um mit nur einem Klick einzigartige Codes online zu erstellen. Keine Registrierung erforderlich.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://passwords-generator.github.io/de/">
+    <title>Online Passwortgenerator - Erstellen Sie starke, sichere, zufällige Passwörter</title>
+    
+    <!-- Open Graph für soziale Medien -->
+    <meta property="og:title" content="Online Passwortgenerator - Erstellen Sie starke, sichere, zufällige Passwörter">
+    <meta property="og:description" content="Generieren Sie sofort starke und sichere Passwörter. Nutzen Sie unseren zufälligen Passwortgenerator, um mit nur einem Klick einzigartige Codes online zu erstellen. Keine Registrierung erforderlich.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://passwords-generator.github.io/de/">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="alternate" hreflang="ru" href="https://passwords-generator.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://passwords-generator.github.io/en/" />
+    <link rel="alternate" hreflang="de" href="https://passwords-generator.github.io/de/" />
+    <link rel="alternate" hreflang="fr" href="https://passwords-generator.github.io/fr/" />
+    <link rel="alternate" hreflang="es" href="https://passwords-generator.github.io/es/" />
+    <link rel="alternate" hreflang="ko" href="https://passwords-generator.github.io/ko/" />
+    <link rel="alternate" hreflang="pt" href="https://passwords-generator.github.io/pt/" />
+    <link rel="alternate" hreflang="x-default" href="https://passwords-generator.github.io/" />
+    <!-- Strukturierte Daten -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SecurePass",
+      "description": "Generieren Sie sofort starke und sichere Passwörter. Nutzen Sie unseren zufälligen Passwortgenerator, um mit nur einem Klick einzigartige Codes online zu erstellen. Keine Registrierung erforderlich.",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
+    <!-- FAQ Strukturierte Daten -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wie funktioniert der Passwortgenerator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unser Passwortgenerator verwendet einen kryptografisch sicheren Zufallszahlengenerator, um vollständig zufällige und unvorhersehbare Codesets zu erstellen. Dies gewährleistet höchste Sicherheit und macht es unmöglich, Muster zu erkennen. Sie können Ihre Passwörter anpassen, indem Sie verschiedene Parameter wie Länge (8, 10, 12 oder mehr Zeichen), Zeichentypen und Lesbarkeitsoptionen auswählen, um das perfekte sichere Passwort für Ihre Bedürfnisse zu erstellen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist es sicher, dieses Tool zu verwenden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, passwords-generator.github.io ist vollkommen sicher. Die Passwortgenerierung erfolgt vollständig in Ihrem Browser mit lokalem JavaScript, und wir speichern oder übertragen niemals Ihre vertraulichen Informationen. Zufällig generierte Passwörter werden nie protokolliert oder auf unseren Servern gespeichert, was den Prozess vollständig sicher und privat macht. Ihre generierten Passwörter bleiben ausschließlich auf Ihrem Gerät."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lang sollte ein sicheres Passwort sein?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Für optimale Sicherheit empfehlen wir Passwörter mit mindestens 12 Zeichen. Für besonders wichtige Konten sollten Sie 16+ Zeichen in Betracht ziehen. Jedes zusätzliche Zeichen erhöht die Komplexität eines komplexen Passworts exponentiell. Ein 8-Zeichen-Passwort kann für weniger wichtige Konten ausreichend sein, aber Passwörter mit 12+ Zeichen bieten erheblichen Schutz gegen moderne Brute-Force-Angriffe, Hash-Cracking-Methoden und ausgeklügelte Ratemethoden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Warum ist es wichtig, starke Passwörter zu generieren?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wikipedia führt eine Liste der 10.000 häufigsten Passwörter, von denen viele noch weit verbreitet sind — darunter einfache Optionen wie 123456, passwort und qwertz. Die Einzigartigkeit unseres Tools stellt jedoch sicher, dass solche schwachen Passwörter automatisch ausgeschlossen werden und bietet ein höheres Maß an Sicherheit. Unser Dienst ermöglicht es Ihnen, komplexe und einzigartige Passwortvariationen zu erstellen, die weniger anfällig für gängige Angriffe sind. Eine starke Authentifizierung ist Ihre erste Verteidigungslinie gegen unbefugten Zugriff auf Ihre Konten. Eine zufällige, komplexe Passphrase verbessert Ihren digitalen Schutz erheblich und macht es böswilligen Akteuren nahezu unmöglich, Ihre Anmeldedaten zu erraten oder zu knacken."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Warum sollte ich nicht überall das gleiche Passwort verwenden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Verwendung identischer Authentifizierungsschlüssel auf mehreren Websites schafft ein Risiko für Informationslecks. Wenn ein Dienst eine Datenpanne erlebt und Ihr Passwort offengelegt wird, können böswillige Akteure mit demselben Passwort Zugang zu all Ihren anderen Konten erhalten. Diese Technik, bekannt als 'Credential Stuffing', ist äußerst verbreitet. Die Verwendung einzigartiger, zufälliger Passphrasen für jedes Konto schützt effektiv und verbessert Ihre allgemeine Cybersicherheit erheblich."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ein starkes Passwort geknackt werden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Theoretisch kann jedes Passwort bei ausreichender Zeit und Ressourcen geknackt werden, aber ein ordnungsgemäß generiertes Zufallspasswort mit 12+ Zeichen und verschiedenen Zeichentypen würde mit moderner Technologie Jahrhunderte zum Knacken benötigen. Komplexe Passwörter mit Buchstaben, Zahlen und Symbolen schaffen robuste Codekombinationen und bieten maximalen Schutz, besonders mit modernen Ratenbegrenzungen, CAPTCHA-Schutz und Kontosperrungsmechanismen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie kann ich überprüfen, ob mein Passwort sicher ist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unser Generator enthält eine Passwort-Stärkenanalyse, die die Komplexität basierend auf Länge, Zeichenvielfalt und Mustererkennung bewertet. Ein wirklich sicheres Passwort sollte mindestens 12 Zeichen enthalten und Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen umfassen. Die Stärkeanzeige hilft Ihnen, Passwörter zu erstellen, die eine Klassifizierung als 'Stark' oder 'Sehr stark' erreichen, für maximale Sicherheit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie kann ich meine Anmeldedaten sicher aufbewahren?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wir empfehlen die Verwendung eines zuverlässigen Passwort-Managers, wie passwords.google.com, um Ihre vertraulichen Daten sicher zu speichern. Solche Tools verschlüsseln Ihre Anmeldedaten und bieten oft praktische Funktionen wie automatisches Ausfüllen und Synchronisation zwischen Geräten. Passwort-Manager machen es praktisch, starke, zufällige Passwörter für jedes Konto zu verwenden, ohne sich alle merken zu müssen, was Ihre allgemeine Sicherheit erheblich verbessert."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- HowTo Strukturierte Daten -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Wie man ein sicheres Passwort erstellt",
+      "description": "Befolgen Sie diese Schritte, um ein starkes, sicheres Passwort mit unserem Generator zu erstellen",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Passwortlänge festlegen",
+          "text": "Wählen Sie eine Länge von mindestens 12 Zeichen für bessere Sicherheit. Für besonders wichtige Konten stellen Sie 16+ Zeichen ein."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Zeichentypen auswählen",
+          "text": "Fügen Sie Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen für maximale Sicherheit ein."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Passwort generieren",
+          "text": "Klicken Sie auf die Schaltfläche 'Passwort generieren', um ein zufälliges, sicheres Passwort basierend auf Ihren Einstellungen zu erstellen."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Passwortstärke prüfen",
+          "text": "Überprüfen Sie die Stärkeanzeige, um sicherzustellen, dass Ihr Passwort das gewünschte Schutzniveau bietet."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Kopieren und speichern",
+          "text": "Kopieren Sie das Passwort in die Zwischenablage und speichern Sie es an einem sicheren Ort oder in einem Passwort-Manager."
+        }
+      ]
+    }
+    </script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+    <link rel="stylesheet" href="/styles.css" />
+    
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col transition-colors duration-300">
+    <header class="w-full bg-white shadow-sm py-2 mb-3">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-shield-alt text-blue-500 text-2xl"></i>
+                <div class="text-xl font-bold text-gray-800">PassGen auf Github</div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="themeToggle" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition theme-toggle">
+                    <i class="fas fa-moon text-gray-600"></i>
+                </button>
+                <button id="mobileMenuButton" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition">
+                    <i class="fas fa-globe text-gray-600"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobiles Sprachmenü -->
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 mobile-menu dark:bg-gray-800">
+        <div class="p-4 border-b flex justify-between items-center">
+            <h3 class="font-medium text-gray-800 dark:text-gray-200">Sprache auswählen</h3>
+            <button id="closeMenu" class="p-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="p-4 space-y-4">
+            <a href="/en/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">English</a>
+            <a href="/de/" class="block py-2 px-4 rounded hover:bg-blue-50 text-blue-600 font-medium dark:hover:bg-gray-700">Deutsch</a>
+            <a href="/fr/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Français</a>
+            <a href="/es/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Español</a>
+            <a href="/ko/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">한국어</a>
+            <a href="/pt/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Português</a>
+            <a href="/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Русский</a>
+        </div>
+    </div>
+
+    <main class="flex-grow flex flex-col items-center justify-center p-2">
+        <div class="max-w-lg w-full bg-white rounded-2xl shadow-lg p-8 space-y-8 transition-colors duration-300">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold text-gray-800 mb-2">Kostenloser Passwortgenerator</h1>
+                <p class="text-gray-500">Erstellen Sie kostenlos starke, einzigartige und sichere Passwörter online</p>
+            </div>
+            <div class="relative">
+                <input type="text" id="passwordOutput" readonly 
+                    class="w-full px-4 py-4 text-lg bg-gray-100 rounded-lg pr-24 font-mono transition-colors duration-300"
+                    value="Klicken Sie auf Generieren →">
+                <div class="absolute right-2 top-1/2 transform -translate-y-1/2 flex space-x-2">
+                    <button id="refreshButton" 
+                        class="px-3 py-1 text-sm bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition-colors"
+                        aria-label="Passwort aktualisieren">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                    <button id="copyButton" 
+                        class="px-3 py-1 text-sm bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+                        aria-label="Passwort kopieren">
+                        <i class="far fa-copy mr-1"></i> Kopieren
+                    </button>
+                </div>
+            </div>
+
+            <div class="space-y-1">
+                <div class="flex justify-between text-sm text-gray-600">
+                    <span>Stärke:</span>
+                    <span id="strengthText" class="font-medium">Mittel</span>
+                </div>
+                <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div id="strengthMeter" class="password-strength-meter bg-yellow-500 w-1/2"></div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <label class="flex justify-between text-sm text-gray-600 mb-2">
+                        Passwortlänge
+                        <span id="lengthValue">8</span>
+                    </label>
+                    <input type="range" id="lengthSlider" min="4" max="64" value="8" 
+                        class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="uppercaseCheck" checked 
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">Großbuchstaben</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="lowercaseCheck" checked 
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">Kleinbuchstaben</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="numbersCheck" checked 
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">Zahlen</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="symbolsCheck" 
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">Symbole</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="excludeSimilarCheck"
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">Ähnliche ausschließen</span>
+                    </label>
+
+                    <label class="flex items-center space-x-3">
+                        <input type="checkbox" id="easyToReadCheck"
+                            class="w-4 h-4 text-blue-500 rounded focus:ring-blue-500">
+                        <span class="text-gray-700">Leicht zu lesen</span>
+                    </label>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <button id="generateButton" 
+                        class="py-4 bg-blue-500 text-white rounded-lg text-lg font-semibold hover:bg-blue-600 transition-colors"
+                        aria-label="Passwort generieren">
+                        <i class="fas fa-key mr-2"></i> Generieren
+                    </button>
+                    <button id="generatePronounceableButton" 
+                        class="py-4 bg-green-500 text-white rounded-lg text-lg font-semibold hover:bg-green-600 transition-colors"
+                        aria-label="Merkbares Passwort generieren">
+                        <i class="fas fa-comment mr-2"></i> Merkbar
+                    </button>
+                </div>
+            </div>
+
+            <!-- Nur Passwort-Verlauf Abschnitt -->
+            <div class="border-t pt-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-semibold text-gray-700">Passwort-Verlauf</h2>
+                </div>
+                
+                <div id="historyPanel" class="bg-gray-50 p-4 rounded-lg">
+                    <div id="passwordHistory" class="space-y-2 max-h-40 overflow-y-auto">
+                        <!-- Passwort-Verlauf wird hier angezeigt -->
+                    </div>
+                    <div class="text-right mt-2">
+                        <button id="clearHistoryButton" class="text-xs text-red-500 hover:text-red-700">
+                            Verlauf löschen
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-lg w-full mt-8 bg-white rounded-2xl shadow-lg p-8 transition-colors duration-300">
+            <!-- Wie man den Generator benutzt Abschnitt -->
+            <div class="mb-8" id="how-to-use">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Wie man den Passwortgenerator verwendet</h2>
+                <p class="text-gray-600 mb-4">
+                    Das Erstellen eines starken, zufälligen Passworts ist einfach mit unserem fortschrittlichen Passwortgenerator. Folgen Sie diesen einfachen Schritten:
+                </p>
+                <ol class="list-decimal pl-5 text-gray-600 space-y-2">
+                    <li>Wählen Sie Ihre gewünschte Passwortlänge (wir empfehlen mindestens 12 Zeichen für Sicherheit)</li>
+                    <li>Wählen Sie die zu verwendenden Zeichentypen (Großbuchstaben, Kleinbuchstaben, Zahlen, Symbole)</li>
+                    <li>Aktivieren Sie zusätzliche Optionen wie "Ähnliche ausschließen", um verwirrende Zeichen zu vermeiden</li>
+                    <li>Klicken Sie auf "Generieren", um automatisch eine vollständig zufällige Zeichenfolge zu erstellen, oder wählen Sie "Merkbar" für eine leichter zu merkende Alternative</li>
+                    <li>Verwenden Sie die Schaltfläche "Kopieren", um Ihr neues sicheres Passwort in die Zwischenablage zu kopieren</li>
+                </ol>
+                <p class="text-gray-600 mt-4">
+                    Für maximale Sicherheit erstellen Sie Passwörter, die 16+ Zeichen lang sind und alle Zeichentypen enthalten. Denken Sie daran, dass ein wirklich komplexes Passwort zufällig und einzigartig sein sollte, nicht auf persönlichen Informationen basierend.
+                </p>
+            </div>
+
+            <!-- Vorteile Abschnitt -->
+            <div class="mb-8" id="benefits">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Funktionen</h2>
+                <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                    <li><strong>Verbesserte Sicherheit:</strong> Verwendet kryptografisch sichere Zufallsgenerierung für wirklich unvorhersehbare Passwörter</li>
+                    <li><strong>Anpassung:</strong> Steuern Sie Passphrasenlänge und Zeichenzusammensetzung, um spezifische Anforderungen zu erfüllen</li>
+                    <li><strong>Stärkeanzeige:</strong> Visuelles Feedback zur Anmeldedatenstärke hilft Ihnen, robustere Passwörter zu erstellen</li>
+                    <li><strong>Merkbare Option:</strong> Generieren Sie aussprechbare Sicherheitsphrasen, die sowohl sicher als auch leichter zu merken sind</li>
+                    <li><strong>Browser-basiert:</strong> Alle Verarbeitung erfolgt in Ihrem Browser - wir sehen oder speichern Ihre sensiblen Daten nie</li>
+                    <li><strong>Passwort-Verlauf:</strong> Bequemer Zugriff auf kürzlich generierte Sicherheitsschlüssel</li>
+                </ul>
+            </div>
+
+            <!-- FAQ Abschnitt -->
+            <div id="faq" class="space-y-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Häufig gestellte Fragen</h2>
+                
+                <div class="accordion-container">
+
+				<!-- FAQ Item 1 -->
+				<div class="accordion-item border-b pb-2">
+				  <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+					Wie funktioniert der Passwortgenerator?
+					<i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+				  </button>
+				  <div class="accordion-content">
+					<p class="py-3 text-gray-600">Unser Passwortgenerator verwendet einen kryptografisch sicheren Zufallszahlengenerator, um vollständig zufällige und unvorhersehbare Codesets zu erstellen. Dies gewährleistet höchste Sicherheit und macht es unmöglich, Muster zu erkennen. Sie können Ihre Passwörter anpassen, indem Sie verschiedene Parameter wie Länge (8, 10, 12 oder mehr Zeichen), Zeichentypen und Lesbarkeitsoptionen auswählen, um das perfekte sichere Passwort für Ihre Bedürfnisse zu erstellen.</p>
+				  </div>
+				</div>
+
+				<!-- FAQ Item 2 -->
+				<div class="accordion-item border-b pb-2">
+				  <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+					Ist es sicher, dieses Tool zu verwenden?
+					<i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+				  </button>
+				  <div class="accordion-content">
+					<p class="py-3 text-gray-600">Ja, passwords-generator.github.io ist vollkommen sicher. Die Passwortgenerierung erfolgt vollständig in Ihrem Browser mit lokalem JavaScript, und wir speichern oder übertragen niemals Ihre vertraulichen Informationen. Zufällig generierte Passwörter werden nie protokolliert oder auf unseren Servern gespeichert, was den Prozess vollständig sicher und privat macht. Ihre generierten Passwörter bleiben ausschließlich auf Ihrem Gerät.</p>
+				  </div>
+				</div>
+
+				<!-- FAQ Item 3 -->
+				<div class="accordion-item border-b pb-2">
+				  <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+					Wie lang sollte ein sicheres Passwort sein?
+					<i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+				  </button>
+				  <div class="accordion-content">
+					<p class="py-3 text-gray-600">Für optimale Sicherheit empfehlen wir Passwörter mit mindestens 12 Zeichen. Für besonders wichtige Konten sollten Sie 16+ Zeichen in Betracht ziehen. Jedes zusätzliche Zeichen erhöht die Komplexität eines komplexen Passworts exponentiell. Ein 8-Zeichen-Passwort kann für weniger wichtige Konten ausreichend sein, aber Passwörter mit 12+ Zeichen bieten erheblichen Schutz gegen moderne Brute-Force-Angriffe, Hash-Cracking-Methoden und ausgeklügelte Ratemethoden.</p>
+				  </div>
+				</div>
+
+				<!-- FAQ Item 4 -->
+				<div class="accordion-item border-b pb-2">
+				  <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+					Warum ist es wichtig, starke Passwörter zu generieren?
+					<i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+				  </button>
+				  <div class="accordion-content">
+					<p class="py-3 text-gray-600">Wikipedia führt eine Liste der 10.000 häufigsten Passwörter, von denen viele noch weit verbreitet sind — darunter einfache Optionen wie 123456, passwort und qwertz. Die Einzigartigkeit unseres Tools stellt jedoch sicher, dass solche schwachen Passwörter automatisch ausgeschlossen werden und bietet ein höheres Maß an Sicherheit. Unser Dienst ermöglicht es Ihnen, komplexe und einzigartige Passwortvariationen zu erstellen, die weniger anfällig für gängige Angriffe sind. Eine starke Authentifizierung ist Ihre erste Verteidigungslinie gegen unbefugten Zugriff auf Ihre Konten. Eine zufällige, komplexe Passphrase verbessert Ihren digitalen Schutz erheblich und macht es böswilligen Akteuren nahezu unmöglich, Ihre Anmeldedaten zu erraten oder zu knacken.</p>
+				  </div>
+				</div>
+
+				<!-- FAQ Item 5 -->
+				<div class="accordion-item border-b pb-2">
+				  <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+					Warum sollte ich nicht überall das gleiche Passwort verwenden?
+					<i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+				  </button>
+				  <div class="accordion-content">
+					<p class="py-3 text-gray-600">Die Verwendung identischer Authentifizierungsschlüssel auf mehreren Websites schafft ein Risiko für Informationslecks. Wenn ein Dienst eine Datenpanne erlebt und Ihr Passwort offengelegt wird, können böswillige Akteure mit demselben Passwort Zugang zu all Ihren anderen Konten erhalten. Diese Technik, bekannt als 'Credential Stuffing', ist äußerst verbreitet. Die Verwendung einzigartiger, zufälliger Passphrasen für jedes Konto schützt effektiv und verbessert Ihre allgemeine Cybersicherheit erheblich.</p>
+				  </div>
+				</div>
+
+				<!-- FAQ Item 6 -->
+				<div class="accordion-item border-b pb-2">
+				  <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+					Kann ein starkes Passwort geknackt werden?
+					<i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+				  </button>
+				  <div class="accordion-content">
+					<p class="py-3 text-gray-600">Theoretisch kann jedes Passwort bei ausreichender Zeit und Ressourcen geknackt werden, aber ein ordnungsgemäß generiertes Zufallspasswort mit 12+ Zeichen und verschiedenen Zeichentypen würde mit moderner Technologie Jahrhunderte zum Knacken benötigen. Komplexe Passwörter mit Buchstaben, Zahlen und Symbolen schaffen robuste Codekombinationen und bieten maximalen Schutz, besonders mit modernen Ratenbegrenzungen, CAPTCHA-Schutz und Kontosperrungsmechanismen.</p>
+				  </div>
+				</div>
+
+				<!-- FAQ Item 7 -->
+				<div class="accordion-item border-b pb-2">
+				  <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+					Wie kann ich überprüfen, ob mein Passwort sicher ist?
+					<i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+				  </button>
+				  <div class="accordion-content">
+					<p class="py-3 text-gray-600">Unser Generator enthält eine Passwort-Stärkenanalyse, die die Komplexität basierend auf Länge, Zeichenvielfalt und Mustererkennung bewertet. Ein wirklich sicheres Passwort sollte mindestens 12 Zeichen enthalten und Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen umfassen. Die Stärkeanzeige hilft Ihnen, Passwörter zu erstellen, die eine Klassifizierung als 'Stark' oder 'Sehr stark' erreichen, für maximale Sicherheit.</p>
+				  </div>
+				</div>
+
+				<!-- FAQ Item 8 -->
+				<div class="accordion-item border-b pb-2">
+				  <button class="accordion-header w-full text-left py-2 font-medium text-gray-700 flex justify-between items-center">
+					Wie kann ich meine Anmeldedaten sicher aufbewahren?
+					<i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+				  </button>
+				  <div class="accordion-content">
+					<p class="py-3 text-gray-600">Wir empfehlen die Verwendung eines zuverlässigen Passwort-Managers, wie passwords.google.com, um Ihre vertraulichen Daten sicher zu speichern. Solche Tools verschlüsseln Ihre Anmeldedaten und bieten oft praktische Funktionen wie automatisches Ausfüllen und Synchronisation zwischen Geräten. Passwort-Manager machen es praktisch, starke, zufällige Passwörter für jedes Konto zu verwenden, ohne sich alle merken zu müssen, was Ihre allgemeine Sicherheit erheblich verbessert.</p>
+				  </div>
+				</div>
+
+			  </div>
+			</div>
+            
+            <p class="text-xs text-gray-400 text-center mt-8">Zuletzt aktualisiert: 17.04.2025</p>
+        </div>
+    </main>
+
+    <footer class="bg-white py-6 mt-12 shadow-inner transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-600 text-sm">&copy; 2025 passwords-generator.github.io. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="/about/" class="text-gray-600 hover:text-blue-500 transition-colors">Über uns</a>
+                    <a href="/privacy/" class="text-gray-600 hover:text-blue-500 transition-colors">Datenschutzerklärung</a>
+                    <a href="/contacts/" class="text-gray-600 hover:text-blue-500 transition-colors">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="/main.js"></script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(88860064, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/88860064" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --></body>
+</html>

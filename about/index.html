@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Узнайте больше о создателе passwords-generator.github.io и его опыте в разработке безопасных инструментов для генерации паролей. Здесь мы делимся нашей миссией обеспечить каждого пользователя надежными средствами защиты данных.">
+    <title>О сервисе passwords-generator.github.io</title>
+    
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="О сервисе passwords-generator.github.io">
+    <meta property="og:description" content="Узнайте больше о создателе passwords-generator.github.io и его опыте в разработке безопасных инструментов для генерации паролей. Здесь я делюсь своей миссией обеспечить каждого пользователя надежными средствами защиты данных.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://passwords-generator.github.io/about/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://passwords-generator.github.io/about/">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+    <link rel="stylesheet" href="/styles.css" />
+    
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col transition-colors duration-300">
+    <header class="w-full bg-white shadow-sm py-2 mb-3">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-shield-alt text-blue-500 text-2xl"></i>
+                <div class="text-xl font-bold text-gray-800">PassGen на Github</div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="themeToggle" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition theme-toggle">
+                    <i class="fas fa-moon text-gray-600"></i>
+                </button>
+                <button id="mobileMenuButton" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition">
+                    <i class="fas fa-globe text-gray-600"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile language menu -->
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 mobile-menu dark:bg-gray-800">
+        <div class="p-4 border-b flex justify-between items-center">
+            <h3 class="font-medium text-gray-800 dark:text-gray-200">Выберите язык</h3>
+            <button id="closeMenu" class="p-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="p-4 space-y-4">
+            <a href="/en/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">English</a>
+            <a href="/de/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Deutsch</a>
+            <a href="/fr/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Français</a>
+            <a href="/es/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Español</a>
+            <a href="/ko/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">한국어</a>
+            <a href="/pt/" class="block py-2 px-4 rounded hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700">Português</a>
+            <a href="/" class="block py-2 px-4 rounded hover:bg-blue-50 text-blue-600 font-medium dark:hover:bg-gray-700">Русский</a>
+        </div>
+    </div>
+
+    <main class="flex-grow flex flex-col items-center justify-center p-4">
+    <div class="max-w-3xl w-full bg-white rounded-2xl shadow-lg p-8 space-y-8 transition-colors duration-300">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">О сервисе</h1>
+            <p class="text-gray-500">История создания и мои принципы работы над генератором паролей passwords-generator.github.io</p>
+        </div>
+
+        <div class="border-b pb-6">
+            <div class="flex flex-col md:flex-row gap-6 items-center mb-6">
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <div class="w-48 h-48 rounded-full bg-blue-100 flex items-center justify-center shadow-md">
+                        <i class="fas fa-user-shield text-blue-500 text-6xl"></i>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-xl font-bold text-gray-800 mb-3">Дэниел Платт</h2>
+                    <p class="text-gray-600 mb-2">Системный администратор и разработчик программного обеспечения</p>
+                </div>
+            </div>
+            <p class="text-gray-700 mb-4">
+                Я — опытный системный администратор и разработчик программного обеспечения с более чем 10-летним стажем в области информационной безопасности. Я специализируюсь на создании инструментов, помогающих защитить цифровые данные и личную информацию.
+            </p>
+            <p class="text-gray-700">
+                Я также увлекаюсь изучением языков, в том числе русского. Это помогло мне адаптировать passwords-generator.github.io для русскоязычной аудитории — с учетом всех особенностей языка и удобства пользователей из России и стран СНГ.
+            </p>
+        </div>
+
+        <div class="space-y-6">
+            <div>
+                <h2 class="text-xl font-bold text-gray-800 mb-4">История создания passwords-generator.github.io</h2>
+                <p class="text-gray-700 mb-4">
+                    Я основал проект passwords-generator.github.io в 2025 году, чтобы дать каждому удобный и надежный инструмент для <a href="https://passwords-generator.github.io/" class="text-blue-600" rel="noopener noreferrer">генерации безопасных паролей</a>. Идея пришла ко мне после череды громких утечек данных, когда я осознал, насколько важно использовать уникальные и сложные пароли.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    В 2021 году я создал прототип и это был небольшой личный инструмент, которым я делился с друзьями и коллегами. В 2025 году я решил открыть его для всех, разместив на GitHub Pages и переведя на несколько языков. Сервис также доступен на следующих языках:
+					<ul class="list-disc pl-5 space-y-2">
+					  <li>
+						<a href="/en/" class="text-blue-600" rel="noopener noreferrer">Password Generator</a>
+					  </li>
+					  <li>
+						<a href="/de/" class="text-blue-600" rel="noopener noreferrer">Passwort-Generator</a>
+					  </li>
+					  <li>
+						<a href="/fr/" class="text-blue-600" rel="noopener noreferrer">Générateur de mots de passe</a>
+					  </li>
+					  <li>
+						<a href="/es/" class="text-blue-600" rel="noopener noreferrer">Generador de contraseñas</a>
+					  </li>
+					  <li>
+						<a href="/ko/" class="text-blue-600" rel="noopener noreferrer">비밀번호 생성기</a>
+					  </li>
+					  <li>
+						<a href="/pt/" class="text-blue-600" rel="noopener noreferrer">Gerador de Senhas</a>
+					  </li>
+					</ul>
+                </p>
+                <p class="text-gray-700">
+                    Сегодня мой генератор используют тысячи людей по всему миру. Я и небольшая энтузиастов продолжаем активно развивать проект, улучшая его функциональность и безопасность.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Мои принципы</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <i class="fas fa-shield-alt text-blue-500 text-xl"></i>
+                            <h3 class="font-semibold text-gray-800">Безопасность</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            Я использую криптографически стойкие алгоритмы для генерации случайных паролей. Это делает их надежными и защищенными от взлома.
+                        </p>
+                    </div>
+                    <div class="p-4 bg-green-50 rounded-lg">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <i class="fas fa-lock text-green-500 text-xl"></i>
+                            <h3 class="font-semibold text-gray-800">Приватность</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            Все пароли генерируются прямо в вашем браузере. Я не получаю, не храню и не передаю их на сервер.
+                        </p>
+                    </div>
+                    <div class="p-4 bg-purple-50 rounded-lg">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <i class="fas fa-code text-purple-500 text-xl"></i>
+                            <h3 class="font-semibold text-gray-800">Открытый код</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            Весь исходный код проекта открыт и размещён на GitHub. Это позволяет всем убедиться в безопасности и надежности решения.
+                        </p>
+                    </div>
+                    <div class="p-4 bg-yellow-50 rounded-lg">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <i class="fas fa-users text-yellow-500 text-xl"></i>
+                            <h3 class="font-semibold text-gray-800">Доступность</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            Я стараюсь делать генератор понятным и удобным для каждого — вне зависимости от уровня технической подготовки и языка.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Миссия</h2>
+                <p class="text-gray-700 mb-4">
+                    Моя миссия — повысить уровень кибербезопасности, предоставляя простые и эффективные инструменты для защиты данных. Я считаю, что каждый пользователь должен иметь бесплатный доступ к цифровой безопасности.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    В условиях роста киберугроз надежный пароль — это первая и главная защита ваших данных. Моя цель — сделать процесс его создания легким и доступным.
+                </p>
+                
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Экспертиза и сертификации</h2>
+                <p class="text-gray-700 mb-4">
+                    У меня есть сертификат CompTIA Security+, который подтверждают мой профессионализм в области информационной безопасности.
+                </p>
+                <p class="text-gray-700">
+                    Я также периодически провожу независимый аудит безопасности проекта, чтобы он соответствовал современным требованиям и стандартам.
+                </p>
+            </div>
+        </div>
+
+        <div class="pt-6 border-t">
+            
+            <p class="text-gray-700 mb-4">
+                Если у вас есть вопросы, предложения или вы хотите сообщить о проблеме — напишите мне через форму обратной связи на странице контакты.
+            </p>
+        </div>
+    </div>
+</main>
+
+    <footer class="bg-white py-6 mt-12 shadow-inner transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-600 text-sm">&copy; 2025 passwords-generator.github.io. Все права защищены.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="/about/" class="text-gray-600 hover:text-blue-500 transition-colors">О сервисе</a>
+                    <a href="/privacy/" class="text-gray-600 hover:text-blue-500 transition-colors">Политика конфиденциальности</a>
+                    <a href="/contacts/" class="text-gray-600 hover:text-blue-500 transition-colors">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="/main.js"></script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(88860064, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/88860064" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --></body>
+</html>
