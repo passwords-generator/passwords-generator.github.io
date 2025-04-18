@@ -187,19 +187,7 @@ function detectLanguageFromURL() {
     if (langMatch && translations[langMatch[1]]) {
         return langMatch[1];
     }
-    return 'en';
-}
-function applyTranslations() {
-    const lang = translations[currentLang];
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (lang[key]) el.textContent = lang[key];
-    });
-
-    document.querySelectorAll('[data-i18n-value]').forEach(el => {
-        const key = el.getAttribute('data-i18n-value');
-        if (lang[key]) el.value = lang[key];
-    });
+    return 'ru';
 }
 if (darkMode) {
     document.body.classList.add('dark');
