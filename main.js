@@ -441,7 +441,8 @@ function generatePassword() {
     if (symbolsCheck && symbolsCheck.checked) charset += chars.symbols;
     if (excludeSimilarCheck && excludeSimilarCheck.checked) {
         for (let char of similarChars) {
-            charset = charset.replace(char, '');
+            //charset = charset.replace(char, '');
+            charset = charset.replace(new RegExp(char, 'g'), '');
         }
     }
     if (easyToReadCheck && easyToReadCheck.checked) {
