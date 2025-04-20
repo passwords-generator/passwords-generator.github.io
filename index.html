@@ -160,7 +160,27 @@
     <meta name="yandex-verification" content="471856daaa5d60e8" />
     <!-- Yandex.RTB -->
 <script>window.yaContextCb=window.yaContextCb||[]</script>
-<script src="https://yandex.ru/ads/system/context.js" async></script>	
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+<style>
+#ya-float-ads {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    #ya-float-ads {
+        position: fixed;
+        top: 95px;
+        left: 0;
+        z-index: 9999;
+    }
+
+    #ya-close {
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+}
+</style>	
 </head>
 <body class="bg-gray-50 min-h-screen flex flex-col transition-colors duration-300">
     <header class="w-full bg-white shadow-sm py-2">
@@ -516,5 +536,38 @@ window.yaContextCb.push(() => {
         "platform": "desktop"
     })
 })
+</script>
+<div id="ya-float-ads">
+    <div id="ya-close">
+        <svg width="60" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.485 6.06A8 8 0 0118.246 0h23.508a8 8 0 017.76 6.06l3.728 14.91A4 4 0 0057.123 24H60 0h2.877a4 4 0 003.88-3.03l3.728-14.91z" fill="#D1D6E0"></path>
+            <path d="M24.793 6.793a1 1 0 000 1.414L28.586 12l-3.793 3.793a1 1 0 001.414 1.414L30 13.414l3.793 3.793a1 1 0 001.414-1.414L31.414 12l3.793-3.793a1 1 0 00-1.414-1.414L30 10.586l-3.793-3.793a1 1 0 00-1.414 0z" fill="#575C66"></path>
+        </svg>
+    </div>
+
+    <div id="yandex_rtb_R-A-15161783-5"></div>
+</div>
+<script>
+    const adWrapper = document.getElementById("ya-float-ads");
+    const adContainerId = "yandex_rtb_R-A-15161783-5";
+    const blockId = "R-A-15161783-5";
+    function renderYandexAd() {
+        adWrapper.style.display = "block";
+        const container = document.getElementById(adContainerId);
+        if (container) {
+            container.innerHTML = "";
+            window.yaContextCb.push(() => {
+                Ya.Context.AdvManager.render({
+                    blockId: blockId,
+                    renderTo: adContainerId
+                });
+            });
+        }
+    }
+    document.getElementById("ya-close").onclick = function () {
+        adWrapper.style.display = "none";
+    };
+    renderYandexAd();
+    setInterval(renderYandexAd, 31000);
 </script>	
 </html>
