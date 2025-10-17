@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
+User-agent: Yandex
+Disallow: /en/
+Disallow: /de/
+Disallow: /es/
+Disallow: /fr/
+Disallow: /ko/
+Disallow: /pt/
 Sitemap: https://passwords-generator.github.io/sitemap.xml
