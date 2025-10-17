@@ -1,0 +1,20 @@
+/ 
+  Content-Language: ru
+
+/en/*
+  Content-Language: en
+
+/de/*
+  Content-Language: de
+
+/fr/*
+  Content-Language: fr
+
+/es/*
+  Content-Language: es
+
+/ko/*
+  Content-Language: ko
+
+/pt/*
+  Content-Language: pt
